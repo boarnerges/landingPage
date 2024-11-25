@@ -14,7 +14,7 @@ const navLinks = [
 ];
 
 export default function Navbar() {
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
     return (
         <>
             <section className="py-4 lg:py-8 fixed w-full top-0 z-50">
@@ -104,7 +104,7 @@ export default function Navbar() {
                                     exit={{ height: 0 }}
                                     className=" overflow-hidden"
                                 >
-                                    <div className="flex flex-col items-center gap-4 py-4">
+                                    <div className="flex flex-col items-center gap-4 py-4 md:hidden">
                                         {navLinks.map((link) => (
                                             <a
                                                 href={link.href}
