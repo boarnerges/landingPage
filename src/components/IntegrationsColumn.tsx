@@ -11,6 +11,7 @@ export default function IntegrationsColumn(props: {
     reverse?: boolean;
 }) {
     const { integrations, className, reverse } = props;
+
     return (
         <motion.div
             initial={{ y: reverse ? "-50%" : 0 }}
@@ -18,11 +19,11 @@ export default function IntegrationsColumn(props: {
             className={twMerge("flex flex-col gap-4 pb-4", className)}
             transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
         >
-            {Array.from({ length: 2 }).map((_, i) => (
-                <Fragment>
-                    {integrations.map((integration) => (
+            {Array.from({ length: 2 }).map((_unused, i) => (
+                <Fragment key={i}>
+                    {integrations.map((integration, index) => (
                         <div
-                            key={Math.random()}
+                            key={integration.name || index}
                             className="bg-neutral-900 border border-white/10 rounded-3xl p-6"
                         >
                             <div className="flex justify-center">
