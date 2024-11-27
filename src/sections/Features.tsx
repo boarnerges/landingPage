@@ -68,7 +68,7 @@ export default function Features() {
                                     />
                                     {Array.from({ length: 3 }).map((_, i) => (
                                         <span
-                                            key={1}
+                                            key={i}
                                             className="size-1.5 rounded-full bg-white"
                                         ></span>
                                     ))}

@@ -18,6 +18,7 @@ export default function Footer() {
                     <nav className="flex gap-6">
                         {footerLinks.map((link) => (
                             <a
+                                key={Math.random()}
                                 href={link.href}
                                 className="text-white/50 text-sm"
                             >
