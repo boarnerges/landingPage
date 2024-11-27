@@ -22,7 +22,7 @@ export default function IntegrationsColumn(props: {
                 <Fragment>
                     {integrations.map((integration) => (
                         <div
-                            key={i}
+                            key={Math.random()}
                             className="bg-neutral-900 border border-white/10 rounded-3xl p-6"
                         >
                             <div className="flex justify-center">
