@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## To check the Live hosted on vercel
 
-Kindly click on this link (https://landing-page-silk-xi.vercel.app/)\\
+Kindly click on this link (https://landing-page-silk-xi.vercel.app)
 
 ## Getting Started
 
