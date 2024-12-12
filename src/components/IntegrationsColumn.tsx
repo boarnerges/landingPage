@@ -19,6 +19,7 @@ export default function IntegrationsColumn(props: {
             className={twMerge("flex flex-col gap-4 pb-4", className)}
             transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
         >
+            /* eslint-disable @typescript-eslint/no-unused-vars */
             {Array.from({ length: 2 }).map((_, index) => (
                 <Fragment key={index}>
                     {integrations.map((integration) => (
@@ -41,6 +42,7 @@ export default function IntegrationsColumn(props: {
                             </p>
                         </div>
                     ))}
+                    /* eslint-enable @typescript-eslint/no-unused-vars */
                 </Fragment>
             ))}
         </motion.div>
